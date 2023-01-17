@@ -1,0 +1,14 @@
+.index {
+    text-align : center;
+}
+
+.index > h1{
+    color:#333;
+    text-decoration: underline;
+    font-size:100px;
+}
+
+.index > p {
+    color:#333;
+    font-size:50px;
+}

@@ -1,0 +1,33 @@
+#footer {
+    background-color: #EEE;
+    color: #999;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    position:absolute;
+    margin-top:120px;
+    left: 0;
+    right: 0;
+}
+
+.body-footer {
+    display:flex;
+}
+
+.footer-elem {
+    width: calc(100% - 20px);
+    padding-top: 0px;
+    padding-bottom:20px;
+    flex-wrap: wrap;
+}
+
+.footer-elem > a > p:hover {
+    color:#4caf50;
+}
+
+@media (max-width: 490px) {
+    .body-footer {
+        display:flex;
+        flex-wrap: wrap;
+    }
+}

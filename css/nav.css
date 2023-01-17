@@ -1,0 +1,122 @@
+a {
+  text-decoration : none;
+}
+
+.nav-container {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  .nav-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  .nav-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .nav-menu-button {
+    background-color: transparent;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px;
+  }
+  
+  .nav-menu-button:hover {
+    color: #4caf50;
+  }
+  
+  .nav-menu-items {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    overflow-y: auto;
+  }
+  
+  .nav-menu-items a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .nav-menu-items a:hover {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .nav-menu-items:hover {
+    display: block;
+  }
+  
+  .nav-menu-button:focus + .nav-menu-items {
+    display: block;
+  }
+
+  .nav-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    
+  }
+  
+  .nav-button:hover {
+    background-color: white;
+    color: #333;
+  }
+  
+  @media (max-width: 600px) {
+    .nav-menu {
+      display: none;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .nav-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .nav-button {
+        width: 100%;
+    }
+  }

@@ -1,0 +1,24 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+ }
+
+table {
+    border: 1px solid #333;
+    margin: auto;
+    border-collapse: collapse
+}
+
+td {
+    text-align :center;
+    border: 1px solid #333;
+    width:auto;
+    padding-right:20px;
+    padding-left:20px;
+}
+
+thead,  tfoot {
+    background-color: #333;
+    color: #fff;
+}

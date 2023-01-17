@@ -1,0 +1,1 @@
+<?php header("Location : https://localhost:8890/glpi/index.php");?>
